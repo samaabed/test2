@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+  
+ 
+</head>
+<body>
+
+    <div class="add-course">  
+        <div class="container">
+            <h1>CRUD System</h1>
+        <label for="">course name</label>
+        <input   class="inputs" type="text" placeholder="cource name"  id="courseName">
+        <div class="error">please start with capital later</div>
+        <label for="">course category</label>
+        <input class="inputs"  type="text" placeholder="cource category"  id="courseCategory">
+        <label for="">course price</label>
+        <input class="inputs"  type="number" placeholder="cource price" id="coursePrice" >
+        <label for="">course description</label>
+        <textarea class="inputs" placeholder="course description" id="courseDescription"></textarea>
+        <button id="click"  >Add Cource</button>
+        <button >clear</button>
+
+    </div>
+
+    <input onkeyup="search(this.value)" type="search" 
+     placeholder="search... 
+     " id="search" >
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>category</th>
+                <th>price</th>
+                <th>description</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="data">
+        
+            <button id="deleteBtn" class="delete">delete all</button>
+           
+        </tbody>
+    </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.min.js" integrity="sha512-F3F53+tMh/CBxMQ60GN5R4EiFW7PcuND+9IDC3Qpkwc7SfxgzHigRdUO3+2+mNal2ot3Wp6KR0zx8r8BbsW+Bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
